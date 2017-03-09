@@ -1,0 +1,19 @@
+<!doctype html>
+<html ng-app="ForecastApp">
+	<head>
+		<script src="angular.js"></script>
+		<script src="app.js"></script>		
+		<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+		<meta charset="utf-8">
+	</head>
+	<body>
+		<div class="container">
+		<div ng-controller="WeatherServiceController as wsc">
+			<select ng-model="wsc.selected_city" ng-change="wsc.list_selected()" ng-options="s.name for s in wsc.cities"></select>
+            <p align="center"><img src="{{wsc.google_static_maps_url}}" /></p> 
+            <my-conditions-special></my-conditions-special>
+            
+		</div>
+		</div>
+	</body>
+</html>
