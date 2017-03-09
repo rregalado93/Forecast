@@ -1,6 +1,6 @@
-# BillCalculator
+# Forecast App
 
-## this Calculator gives you the total with tax and tip included 
+## this app gives current weather confitions
 
 ### I obtained useful information from
 * [panel info](http://www.w3schools.com/bootstrap/bootstrap_panels.asp)
